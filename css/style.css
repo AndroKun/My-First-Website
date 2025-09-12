@@ -1,0 +1,194 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo img {
+  width: 35px;
+  height: 35px;
+}
+
+.navbar .nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar .nav-links li {
+  margin-left: 20px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Banner */
+.banner {
+  text-align: center;
+  padding: 50px 20px;
+  background: #f4f4f4;
+}
+
+.banner h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.banner-box img {
+  width: 100%;
+  max-width: 1000px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Our Profile */
+.profile {
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.profile h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  max-width: 200px;
+  border-radius: 15px;
+}
+
+.profile-text {
+  max-width: 600px;
+  text-align: left;
+}
+
+/* Headquarter */
+.headquarter {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.cities {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.city {
+  border: 2px solid #333;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
+/* Message Us */
+.message {
+  padding: 40px 20px;
+  background: #f9f9f9;
+}
+
+.form-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+form {
+  flex: 1;
+  min-width: 250px;
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin: 10px 0 5px;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+form button {
+  background: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.output {
+  flex: 1;
+  min-width: 250px;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #333;
+  color: #fff;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cities {
+    flex-direction: column;
+  }
+  .city {
+    margin: 10px auto;
+  }
+  .form-container {
+    flex-direction: column;
+  }
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-text {
+    text-align: center;
+  }
+}
